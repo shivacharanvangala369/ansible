@@ -1,4 +1,4 @@
-- name: print vars
+- name: print  vars
   hosts: local
   vars_files:
   - 06.course.yaml

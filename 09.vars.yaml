@@ -1,0 +1,7 @@
+- name: print var from args
+  hosts: local
+  connection: local
+  tasks:
+  - name: print vars from arg
+    ansible.builtin.debug:
+      msg: "enter a name: {{ sub }}"
