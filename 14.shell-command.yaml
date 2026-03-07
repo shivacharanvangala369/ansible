@@ -3,5 +3,6 @@
   connection: local
   tasks:
   - name: command and shell module test
-    ansible.builtin.commoad: cat /etc/passwd | grep root
+    # ansible.builtin.commoad: cat /etc/passwd | grep root
+    ansible.bultin.shell: cat /etc/passwd | grep root
     register: user_output
