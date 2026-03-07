@@ -14,7 +14,7 @@
       # vars:
       #   NAME: ansible from task
       ansible.builtin.debug:
-        msg: "ansible from INV {{ NAME  }} "0
+        msg: "ansible from INV {{ NAME  }} "
 
 
 # Highest pref
