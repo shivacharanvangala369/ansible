@@ -1,7 +1,8 @@
 - name: print vars
   hosts: local
-  connection: local
+  vars_files:
+  - 06.course.yaml
   tasks:
     - name: print vars
       ansible.builtin.debug:
-        msg: "curr sub is : {{ sub }}"
+        msg: "curr sub is : {{ Course }}"
