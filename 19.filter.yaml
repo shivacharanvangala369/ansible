@@ -3,7 +3,7 @@
   connection: local
   vars:
     topics: linux, shell, ansible, docker
-    tags: ansible
+    tags:
       name: devops
       project: roboshop
       componenet: catalogue
