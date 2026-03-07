@@ -27,7 +27,7 @@
 
   - name: read the 06.course.yaml
     ansible.builtin.set_fact:
-      course_yaml: "{{ lookup( 'file', 06.course.yaml ) | from_yaml }}"
+      course_yaml: "{{ lookup( 'file', '06.course.yaml' ) | from_yaml }}"
 
   - name: conver 06.course.yaml to JSON 
     ansible.builtin.debug:
