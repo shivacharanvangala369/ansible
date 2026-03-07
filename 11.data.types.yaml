@@ -1,0 +1,25 @@
+- name: data types
+  hosts: local
+  connection: local
+  vars:
+    PROGRAME: "AWS Devops"
+    DURATION: 140HRS
+    IS_LIVE: true
+    DETAILS:
+      TRAINER: "shiva"
+      MONTHS: 4
+    TOPIC:
+    - linux
+    - AWS
+    - Ansible
+    - terrafrom
+    - Docker
+    - Kubernetes
+  tasks:
+  - name: print vars
+    ansible.builtin.debug:
+      msg: |
+        Program: {{ PROGRAME }}
+        Duration: {{ DURATION }}
+        Ruuning_topic_now: {{ TOPIC[2] }}
+        details: {{ DETAILS{1} }}
