@@ -6,3 +6,4 @@
     # ansible.builtin.commoad: cat /etc/passwd | grep root
     ansible.bultin.shell: cat /etc/passwd | grep root
     register: user_output
+      msg: {{ user_output }}
