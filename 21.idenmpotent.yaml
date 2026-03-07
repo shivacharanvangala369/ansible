@@ -1,0 +1,8 @@
+- name: check idenmpotent
+  hosts: local
+  become: yes
+  connection: local
+  tasks:
+  - name: crate user
+    ansible.builtin.user:
+      name: jhon
