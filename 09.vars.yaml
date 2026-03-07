@@ -4,4 +4,4 @@
   tasks:
   - name: print vars from arg
     ansible.builtin.debug:
-      msg: "enter a name: {{ sub }}"
+      msg: "enter a name: {{ subs}}"
