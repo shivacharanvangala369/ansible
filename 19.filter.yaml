@@ -2,7 +2,14 @@
   hosts: local
   connection: local
   become: yes
+  vars:
+    topics: linux, shell, ansible, docker
   tasks:
-  - name: filters
+  - name: debug filters
     ansible.builtin.debug:
-      msg: "Hi shiva, {{ GREETING | default('GOOD Morning') }}"
+      msg: "Hi shiva, {{ GREETING | default('GOOD Morning') }}"  # deafult filter
+
+  tasks:
+  - name: convertion of strings to list
+    ansible.builtin.debug:
+      msg: "{{ topics | split (',') }}"  # convertion of strings to list
