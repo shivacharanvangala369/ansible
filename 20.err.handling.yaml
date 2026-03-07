@@ -10,3 +10,8 @@
   - name: print user_output
     ansible.builtin.debug:
       msg: "{{ user_output }}"
+
+
+- name: create user
+  ansible.builtin.commad: sudo useradd shiv
+  when: user_output.rx != 0
