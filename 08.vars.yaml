@@ -3,7 +3,5 @@
   connection: local
   tasks:
     - name: print vars
-      vars:
-        sub: aws
       ansible.builtin.debug:
         msg: "curr sub is : {{ sub }}"
