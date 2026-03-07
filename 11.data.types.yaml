@@ -22,4 +22,4 @@
         Program: {{ PROGRAME }}
         Duration: {{ DURATION }}
         Ruuning_topic_now: {{ TOPIC[2] }}
-        details: {{ DETAILS{1} }}
+        details: {{ DETAILS.MONTHS }}
