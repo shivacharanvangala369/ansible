@@ -4,7 +4,7 @@
   tasks:
   - name: working to loops
     ansible.builtin.debug:
-      msg: {{ iteam }}
+      msg: {{ item }}
     loop:
     - shiva
     - balu
