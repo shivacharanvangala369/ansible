@@ -1,0 +1,18 @@
+- name: print vars
+  hosts: local
+  vars:
+    Course_duration: 10
+    Trainer_live: true
+  tasks:
+    - name: print vars
+      ansible.builtin.debug:
+        msg: "Course name duration"
+      when:  Course_duration < 10
+
+  tasks:
+    - name: print vars
+      ansible.builtin.debug:
+        msg: "training is live "
+      when:  Trainer_live   
+
+
