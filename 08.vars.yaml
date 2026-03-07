@@ -1,11 +1,9 @@
 - name: print vars
   hosts: local
   connection: local
-  vars_files:
-  - 06.course.yaml
   tasks:
     - name: print vars
       vars:
-        Course: aws
+        sub: aws
       ansible.builtin.debug:
-        msg: "Course name is: {{ Course }} and Trainer is : {{ Trainer }} duration is {{ Duration }} and curr sub is : {{ sub }}"
+        msg: "curr sub is : {{ sub }}"
