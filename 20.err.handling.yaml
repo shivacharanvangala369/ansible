@@ -12,6 +12,6 @@
       msg: "{{ user_output }}"
 
 
-- name: create user
-  ansible.builtin.command: sudo useradd shiv
-  when: user_output.rc != 0
+  - name: create user
+    ansible.builtin.command: sudo useradd shiv
+    when: user_output.rc != 0
