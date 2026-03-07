@@ -3,7 +3,7 @@
   connection: local
   tasks:
   - name: check user exsist or not
-    ansible.builtin.command: id roboshop
+    ansible.builtin.command: id shiva
     register: user_output
 
   - name: print user_output
