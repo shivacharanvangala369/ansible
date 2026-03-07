@@ -14,4 +14,4 @@
 
 - name: create user
   ansible.builtin.commad: sudo useradd shiv
-  when: user_output.rx != 0
+  when: user_output.rc != 0
