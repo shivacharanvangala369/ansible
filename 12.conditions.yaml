@@ -8,7 +8,8 @@
     - name: print vars
       ansible.builtin.debug:
         msg: "Course name duration"
-      when:  Course_duration = 10
+      when:  Course_duration > 7
+
     - name: print vars
       ansible.builtin.debug:
         msg: "training is live "
