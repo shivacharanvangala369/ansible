@@ -1,5 +1,6 @@
 - name: print vars
   hosts: local
+  connection: local
   vars_files:
   - 06.course.yaml
   tasks:
