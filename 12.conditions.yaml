@@ -1,5 +1,6 @@
 - name: print vars
   hosts: local
+  connection: local
   vars:
     Course_duration: 10
     Trainer_live: true
