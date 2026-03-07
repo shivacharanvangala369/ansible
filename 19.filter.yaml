@@ -4,6 +4,10 @@
   become: yes
   vars:
     topics: linux, shell, ansible, docker
+    tags: ansible
+      names: devops
+      project: roboshop
+      componenet: catalogue
   tasks:
   - name: debug filters
     ansible.builtin.debug:
@@ -13,3 +17,8 @@
   - name: convertion of strings to list
     ansible.builtin.debug:
       msg: "{{ topics | split (',') }}"  # convertion of strings to list
+
+  tasks:
+  - name: convertion of maps  to list
+    ansible.builtin.debug:
+      msg: "{{ tags | 'dect2item' }}" 
