@@ -3,7 +3,7 @@
   vars_files:
   - 06.course.yaml
   tasks:
-    - name: print vars
+    - name: print vars from task level
       vars:
         Course: from task level
       ansible.builtin.debug:
