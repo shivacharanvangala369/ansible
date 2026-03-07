@@ -13,12 +13,10 @@
     ansible.builtin.debug:
       msg: "Hi shiva, {{ GREETING | default('GOOD Morning') }}"  # deafult filter
 
-  tasks:
   - name: convertion of strings to list
     ansible.builtin.debug:
       msg: "{{ topics | split (',') }}"  # convertion of strings to list
 
-  tasks:
   - name: convertion of maps  to list
     ansible.builtin.debug:
       msg: "{{ tags | 'dect2item' }}" 
