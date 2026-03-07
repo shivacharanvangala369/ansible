@@ -5,7 +5,7 @@
   vars:
     topics: linux, shell, ansible, docker
     tags: ansible
-      names: devops
+      name: devops
       project: roboshop
       componenet: catalogue
   tasks:
@@ -19,4 +19,4 @@
 
   - name: convertion of maps  to list
     ansible.builtin.debug:
-      msg: "{{ tags | 'dect2item' }}" 
+      msg: "{{ tags | dect2items }}" 
