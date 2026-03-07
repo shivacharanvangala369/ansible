@@ -9,6 +9,6 @@
       state: present
     loop:
     - nginx
-    - mysql
+    - { name: "mysql", state: "absent"}
     - git
     - httpd
