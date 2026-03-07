@@ -8,6 +8,9 @@
         Course: from task level
       ansible.builtin.debug:
         msg: "curr sub is : {{ Course }}"
-    - name: print vars
+    - name: print vars from folder
       ansible.builtin.debug:
         msg: "curr sub is : {{ Course }}"
+    - name: print vars from INV which not mention in taks and var_folder
+      ansible.builtin.debug:
+        msg: "curr sub is : {{ sub }}"
