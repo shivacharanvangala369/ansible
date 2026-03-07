@@ -1,7 +1,6 @@
 - name: doing on loops
   hosts: local
   connection: local
-  become: yes
   vars:
     topics: linux, shell, ansible, docker
     tags: ansible
