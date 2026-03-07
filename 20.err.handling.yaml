@@ -3,8 +3,9 @@
   connection: local
   tasks:
   - name: check user exsist or not
-    ansible.builtin.command: id shiva
+    ansible.builtin.command: id shiv
     register: user_output
+    ignore_errors: true
 
   - name: print user_output
     ansible.builtin.debug:
