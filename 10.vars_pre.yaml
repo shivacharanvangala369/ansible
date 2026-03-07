@@ -1,8 +1,8 @@
 - name: print vars prf
   hosts: local
   connection: local
-  vars:
-    NAME: "ansible from play"
+  # vars:
+  #   NAME: "ansible from play"
   # vars_files:
   #   - 06.course.yaml
   # vars_prompt:
@@ -23,3 +23,4 @@
   # 2. Tasks
   # 3. file_fold
   # 4. promt
+  # 5. play
