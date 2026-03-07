@@ -10,8 +10,14 @@
       prompt: What is your username?
       private: false
   tasks:
-    - name: print vars
-      vars:
-        NAME: ansible from task
+    - name: print vars from tasks
+      # vars:
+      #   NAME: ansible from task
       ansible.builtin.debug:
-        msg: "ansible from INV {{ NAME  }} "
+        msg: "ansible from INV {{ NAME  }} "0
+
+
+# Highest pref
+
+  # 1. args
+  # 2. Tasks
