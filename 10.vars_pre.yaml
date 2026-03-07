@@ -3,8 +3,6 @@
   connection: local
   vars:
     NAME: "ansible from play"
-  # vars_files:
-  #   - 06.course.yaml
   vars_prompt:
     - name: NAME
       prompt: What is your username?
@@ -22,3 +20,4 @@
   # 1. args
   # 2. Tasks
   # 3. file_fold
+  # 4. promt
