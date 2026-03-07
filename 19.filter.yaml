@@ -31,6 +31,6 @@
 
   - name: conver 06.course.yaml to JSON 
     ansible.builtin.debug:
-      msg: "{{ course_yaml | to_nice_josn}}"
+      msg: "{{ course_yaml | to_nice_json}}"
     
   
