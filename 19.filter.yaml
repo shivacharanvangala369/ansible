@@ -19,7 +19,7 @@
   - name: convertion of maps  to list
     ansible.builtin.debug:
       msg: "{{ tags | dict2items }}"
-    register user_output
+    register: user_output
 
   - name: print convertion of maps  to list
     ansible.builtin.debug:
