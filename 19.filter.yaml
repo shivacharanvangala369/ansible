@@ -24,5 +24,13 @@
   - name: print convertion of maps  to list
     ansible.builtin.debug:
       msg: "{{ user_output }}"
+
+  - name: read the 06.Course.yaml
+    ansible.builtin.set_fact:
+      course_yaml: "{{ lookup( 'file', 06.Course.yaml ) | from_yaml }}"
+
+  - name: conver 06.Course.yaml to JSON 
+    ansible.builtin.debug:
+      msg: "{{ course_yaml | to_nice_josn}}"
     
   
