@@ -1,0 +1,17 @@
+- name: print vars prf
+  hosts: local
+  connection: local
+  vars:
+    NAME: "ansible from play"
+  vars_files:
+    - 06.Course.yaml
+  vars_prompt:
+    - name: NAME
+      prompt: What is your username?
+      private: false
+  tasks:
+    - name: print vars
+      vars:
+        NAME: ansible from task
+      ansible.builtin.debug:
+        msg: "ansible from INV {{ NAME  }} "
