@@ -4,5 +4,7 @@
   - 06.course.yaml
   tasks:
     - name: print vars
+      vars:
+        Course: from task level
       ansible.builtin.debug:
         msg: "curr sub is : {{ Course }}"
