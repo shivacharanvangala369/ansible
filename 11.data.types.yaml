@@ -2,13 +2,13 @@
   hosts: local
   connection: local
   vars:
-    PROGRAME: "AWS Devops"
-    DURATION: 140HRS
-    IS_LIVE: true
-    DETAILS:
+    PROGRAME: "AWS Devops" # string
+    DURATION: 140 # int 
+    IS_LIVE: true  # bool 
+    DETAILS:    # dictinary/maps 
       TRAINER: "shiva"
       MONTHS: 4
-    TOPIC:
+    TOPIC:   # list
     - linux
     - AWS
     - Ansible
@@ -22,4 +22,4 @@
         Program: {{ PROGRAME }}
         Duration: {{ DURATION }}
         Ruuning_topic_now: {{ TOPIC[2] }}
-        details: {{ DETAILS.MONTHS }}
+        details: {{ DETAILS.MONTHS }} 
