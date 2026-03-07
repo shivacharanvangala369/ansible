@@ -3,6 +3,6 @@
   connection: local
   become: yes
   tasks:
-  - name:
+  - name: filters
     ansible.builtin.debug:
       msg: "Hi shiva, {{ GREETING | default('GOOD Morning')'}}"
