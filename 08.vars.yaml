@@ -8,3 +8,6 @@
         Course: from task level
       ansible.builtin.debug:
         msg: "curr sub is : {{ Course }}"
+    - name: print vars
+      ansible.builtin.debug:
+        msg: "curr sub is : {{ Course }}"
